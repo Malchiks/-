@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #ff0000, #000000);
+    background-size: 300% 100%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.telegram-button {
+    background-color: #0088cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.telegram-button:hover {
+    background-color: #005580;
+}
+
+/* Media query для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .telegram-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
